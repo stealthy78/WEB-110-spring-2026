@@ -1,0 +1,108 @@
+/* 
+   Author: Axel Solis
+   Date: March 23, 2026
+   Subject: Portfolio Website Styles
+*/
+
+/* Wrapper - Liquid Layout */
+#wrapper {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+}
+
+/* Header Styles */
+header {
+    background-color: Black;
+    color: #39ff14;
+    padding: 2em;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #444;
+    padding: 1em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1.5em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 2em;
+    background-color: white;
+    min-height: 400px;
+}
+
+main h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+main p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
+}
+
+/* Lists */
+ul, ol {
+    font-size: 1em;
+    margin: 1em 0;
+    padding-left: 2em;
+}
+
+li {
+    margin: 0.5em 0;
+}
+
+/* Footer */
+footer {
+    background-color: Black;
+    color: Neon green;
+    text-align: center;
+    padding: 1em;
+    font-size: 1em;
+}
+
+/* Links */
+a {
+    color: Purple;
+}
+
+a:visited {
+    color: Red;
+}
