@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Exam - Form | Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- COMMENT: Start of Page 3 -->
+    <!-- 
+       File: final3.html
+       Subject: Renewable Energy Final Project
+       Author: Axel Solis
+       Date: 4/30/2026
+    -->
+
+    <div id="wrapper">
+        <header>
+            <h1>Project Feedback Form</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="final1.html">Home</a></li>
+                <li><a href="final2.html">Solar & Wind</a></li>
+                <li><a href="final3.html">Project Feedback</a></li>
+                <li><a href="final4.html">Credits</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <h2>Share Your Thoughts</h2>
+                <p>
+                    We value your feedback on this project. Please fill out the form below to provide 
+                    insights on the content, design, and usability of the website.
+                </p>
+                <img src="Me.png" alt="Illustration of a form" width="600" height="300">
+
+                <!-- FORM: All required elements included -->
+                <form action="#" method="post">
+                    
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="date">Preferred Date to Contact:</label>
+                    <input type="date" id="date" name="date">
+
+                    <label>Interest Level:</label><br>
+                    <!-- Radio Buttons -->
+                    <input type="radio" id="high" name="interest" value="high">
+                    <label for="high" style="display:inline; font-weight:normal;">Very Interested</label><br>
+                    
+                    <input type="radio" id="med" name="interest" value="med">
+                    <label for="med" style="display:inline; font-weight:normal;">Somewhat Interested</label><br>
+                    
+                    <input type="radio" id="low" name="interest" value="low">
+                    <label for="low" style="display:inline; font-weight:normal;">Not Very Interested</label>
+
+                    <label for="topics">Select Topics:</label>
+                    <!-- Select Dropdown (At least 3 options) -->
+                    <select id="topics" name="topics">
+                        <option value="solar">Solar Energy</option>
+                        <option value="wind">Wind Energy</option>
+                        <option value="hydro">Hydroelectric</option>
+                        <option value="geothermal">Geothermal</option>
+                    </select>
+
+                    <label for="checkboxes">Additional Interests:</label>
+                    <!-- Checkboxes -->
+                    <input type="checkbox" id="check1" name="interests" value="news">
+                    <label for="check1" style="display:inline;">News Updates</label><br>
+                    
+                    <input type="checkbox" id="check2" name="interests" value="courses">
+                    <label for="check2" style="display:inline;">Online Courses</label><br>
+
+                    <label for="comments">Your Comments:</label>
+                    <textarea id="comments" name="comments" rows="6" cols="50"></textarea>
+
+                    <input type="submit" value="Submit Feedback">
+                    <input type="reset" value="Clear Form">
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Axel Solis. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

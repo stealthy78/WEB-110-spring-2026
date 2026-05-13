@@ -1,0 +1,194 @@
+/* 
+   File: styles.css
+   Subject: Final Exam Project
+   Author: Axel Solis
+   Date: April 30, 2026
+   Description: Main stylesheet for the 4-page final project.
+   Features: Liquid layout, responsive media queries, em/px/% measurements.
+*/
+
+/* --- RESET & BASICS --- */
+* {
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Base size for em calculations */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* --- LAYOUT CONTAINER (Liquid, Centered, Not Full Width) --- */
+#wrapper {
+    width: 90%; /* Liquid percentage width */
+    max-width: 1000px; /* Prevents it from getting too wide */
+    margin: 20px auto; /* Centered with top/bottom margins */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* --- HEADER & NAVIGATION --- */
+header {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em; /* Using ems for text measurements */
+    color: #0056b3;
+}
+
+/* Horizontal Nav - Unordered List */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #eee;
+    overflow: hidden; /* Clears floats if needed */
+}
+
+nav ul li {
+    display: inline-block; /* Horizontal layout */
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px; /* Small px padding */
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+    border-right: 1px solid #ccc;
+}
+
+nav ul li a:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* --- CONTENT SECTIONS --- */
+main {
+    padding: 20px;
+}
+
+/* Wireframe-like section styling */
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+/* --- IMAGES --- */
+img {
+    max-width: 100%; /* Flexible images */
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 4px;
+}
+
+/* --- FORMS --- */
+form {
+    background-color: #eef;
+    padding: 20px;
+    border: 1px solid #ccd;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+form input[type="submit"], form input[type="reset"] {
+    width: auto;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* --- LISTS --- */
+ol, ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* --- CREDITS PAGE SPECIFIC --- */
+.credits-list {
+    font-size: 0.9em;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    font-size: 0.8em;
+}
+
+/* --- MEDIA QUERIES (Responsive Design) --- */
+
+/* Mobile First (Default is usually mobile, but we set desktop/tablet overrides below) */
+
+/* Tablet View (Max width 768px) */
+@media screen and (max-width: 768px) {
+    #wrapper {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        display: block; /* Stack nav items vertically on tablet */
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    nav ul li a {
+        padding: 15px;
+    }
+}
+
+/* Desktop View (Min width 1024px) */
+@media screen and (min-width: 1024px) {
+    #wrapper {
+        width: 80%; /* Slightly tighter on large screens */
+        padding: 40px;
+    }
+    
+    h1 {
+        font-size: 3em;
+    }
+    
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    section {
+        width: 48%; /* Two columns on desktop */
+        margin-right: 2%;
+    }
+    
+    section:last-child {
+        margin-right: 0;
+    }
+}
